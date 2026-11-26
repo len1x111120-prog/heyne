@@ -1,0 +1,37 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HEYNE 개인정보처리방침</title><link rel="icon" href="logo.svg"><link rel="stylesheet" href="style.css"></head><body><main>
+<header><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="17" fill="none" stroke="currentColor" stroke-width="3"/><path d="M23 19 V45 M41 19 V45 M23 32 H41" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/></svg><a href="./">HEYNE</a></header>
+<h1>개인정보처리방침</h1>
+<p class="dim">시행일: 2026년 11월 26일</p>
+<p>HEYNE(이하 “HEYNE”)는 사용자의 정보를 가능한 한 사용자 곁에만 두도록 설계되었습니다. HEYNE 제작자는 별도의 서버를 운영하지 않으며, 사용자의 대화나 개인정보를 수집·보관하지 않습니다.</p>
+<h2>1. 어디에 무엇이 저장되나요</h2>
+<ul>
+<li><b>HEYNE 카드 안:</b> 대화 기록, 설정, 사용자가 입력한 AI 서비스 API 키, 구글 드라이브 연결 정보(갱신 토큰, 연결된 계정 이메일). 잠금 PIN을 설정하면 PIN을 입력해야 사용할 수 있습니다.</li>
+<li><b>사용 중인 컴퓨터:</b> 카드와 함께 실행되는 도우미 프로그램이 인터넷 연결을 대신 해 줍니다. 도우미는 대화 기록을 컴퓨터에 따로 저장하지 않으며, 카드를 뽑으면 구글 연결 정보도 잊습니다. AI가 사용자의 요청으로 만든 파일은 사용자가 지정한 위치에 남습니다.</li>
+<li><b>사용자의 구글 드라이브 (선택):</b> 드라이브 백업을 켠 경우, 대화가 드라이브의 “HEYNE” 폴더에 JSON 파일로 저장됩니다.</li>
+</ul>
+<h2>2. 외부로 보내지는 정보</h2>
+<ul>
+<li><b>AI 서비스:</b> 대화 내용은 답을 만들기 위해 사용자가 선택한 AI 서비스(예: Anthropic, DeepSeek)로 사용자의 API 키를 통해 전송됩니다. 이 정보의 처리는 각 서비스의 개인정보처리방침을 따릅니다.</li>
+<li><b>구글:</b> 드라이브 백업을 켠 경우에만, 대화 파일이 구글 드라이브 API로 전송됩니다.</li>
+<li>그 밖에 HEYNE 제작자나 제3자에게 사용자 정보를 보내거나 판매하지 않습니다. 광고나 분석 도구를 쓰지 않습니다.</li>
+</ul>
+<h2>3. 구글 사용자 데이터 사용</h2>
+<p>HEYNE는 구글 드라이브의 <code>https://www.googleapis.com/auth/drive.file</code> 권한만 요청합니다. 이 권한으로 HEYNE는 자신이 만든 파일(“HEYNE” 폴더의 대화 백업)만 만들고, 읽고, 고칠 수 있으며 드라이브의 다른 파일은 볼 수 없습니다. 구글 계정의 이메일 주소는 설정 화면에 어떤 계정이 연결되었는지 보여 주는 데만 쓰입니다.</p>
+<p>HEYNE가 구글 API에서 받은 정보를 사용하고 다른 앱으로 전송하는 방식은 제한적 사용(Limited Use) 요구사항을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 준수합니다. 구글 사용자 데이터는 대화 백업·불러오기 기능을 제공하는 데만 쓰이며, 광고에 쓰거나 사람이 열람하거나 AI 모델 학습에 쓰지 않습니다.</p>
+<h2>4. 연결 해제와 삭제</h2>
+<ul>
+<li>HEYNE 설정 → Google Drive → “연결 해제”를 누르면 카드에서 연결 정보가 지워집니다.</li>
+<li><a href="https://myaccount.google.com/permissions">Google 계정의 서드파티 액세스</a>에서 HEYNE의 권한을 언제든 취소할 수 있습니다.</li>
+<li>드라이브의 “HEYNE” 폴더를 지우면 백업도 지워집니다. 카드의 대화는 HEYNE에서 대화를 삭제하면 지워집니다.</li>
+</ul>
+<h2>5. 아동</h2>
+<p>HEYNE는 아동을 대상으로 정보를 수집하지 않습니다.</p>
+<h2>6. 변경과 문의</h2>
+<p>이 방침이 바뀌면 이 페이지에 새 시행일과 함께 게시합니다. 문의는 <a href="https://github.com/len1x111120-prog/heyne/issues">GitHub 문의 페이지</a>로 남겨 주세요.</p>
+<div class="lang">
+<h2>English summary</h2>
+<p>HEYNE's maker runs no servers and collects no personal data. Chats, settings, your AI API keys and your Google Drive link (refresh token, account email) are stored on the HEYNE card itself. Chat messages are sent only to the AI provider you choose, using your own API key. If you turn on Drive backup, chats are saved as JSON files in a “HEYNE” folder in your Google Drive.</p>
+<p>HEYNE requests only the <code>drive.file</code> scope, so it can only create, read and update files it created. HEYNE's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used only to back up and restore your chats; it is never used for advertising, read by humans, or used to train AI models. You can disconnect in HEYNE settings or revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+</div>
+<nav class="foot"><a href="./">홈 · Home</a><a href="privacy.html">개인정보처리방침 · Privacy</a><a href="terms.html">서비스 약관 · Terms</a><a href="https://github.com/len1x111120-prog/heyne/issues">문의 · Contact</a></nav></main></body></html>
